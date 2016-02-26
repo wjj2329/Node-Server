@@ -1,0 +1,131 @@
+nohup: ignoring input
+[0mGET / [36m304 [0m10.061 ms - -[0m
+[0mGET /style.css [36m304 [0m1.608 ms - -[0m
+[0mGET /javascriptstuff.js [33m404 [0m10.693 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [36m304 [0m0.616 ms - -[0m
+[0mGET / [36m304 [0m0.803 ms - -[0m
+[0mGET /style.css [36m304 [0m0.420 ms - -[0m
+[0mGET /javascriptstuff.js [33m404 [0m1.910 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [36m304 [0m1.357 ms - -[0m
+[0mGET / [36m304 [0m0.614 ms - -[0m
+[0mGET /style.css [36m304 [0m0.399 ms - -[0m
+[0mGET /javascriptstuff.js [33m404 [0m2.285 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [36m304 [0m0.546 ms - -[0m
+[0mGET / [32m200 [0m4.132 ms - 3764[0m
+[0mGET /style.css [32m200 [0m1.295 ms - 2611[0m
+[0mGET /javascriptstuff.js [33m404 [0m0.829 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [32m200 [0m0.687 ms - 84155[0m
+[0mGET /favicon.ico [33m404 [0m0.970 ms - 1006[0m
+[0mGET / [32m200 [0m1.376 ms - 3764[0m
+[0mGET /javascriptstuff.js [33m404 [0m2.889 ms - 1006[0m
+[0mGET /style.css [36m304 [0m2.806 ms - -[0m
+[0mGET /weatherpics/thepic.jpeg [36m304 [0m0.878 ms - -[0m
+{ q: 'mo' }
+/^mo/
+[]
+[0mGET /getcity?q=mo [32m200 [0m19.401 ms - 2[0m
+{ q: 'moa' }
+/^moa/
+[]
+[0mGET /getcity?q=moa [32m200 [0m1.607 ms - 2[0m
+{ q: 'moab' }
+/^moab/
+[]
+[0mGET /getcity?q=moab [32m200 [0m0.907 ms - 2[0m
+{ q: 'moab' }
+/^moab/
+[]
+[0mGET /getcity?q=moab [36m304 [0m3.648 ms - -[0m
+{ q: 'moab' }
+/^moab/
+[]
+[0mGET /getcity?q=moab [36m304 [0m0.904 ms - -[0m
+[0mGET /weatherpics/clear.jpg [32m200 [0m0.881 ms - 1872505[0m
+[0mGET / [32m200 [0m0.751 ms - 3764[0m
+[0mGET /style.css [32m200 [0m0.501 ms - 2611[0m
+[0mGET /javascriptstuff.js [33m404 [0m1.153 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [32m200 [0m0.901 ms - 84155[0m
+[0mGET /favicon.ico [33m404 [0m1.246 ms - 1006[0m
+{ q: 'A' }
+/^A/
+Alpine
+Altamont
+Alton
+Altonah
+American Fork
+Aneth
+Annabella
+Antimony
+Aurora
+Axtell
+[ { city: 'Alpine' },
+  { city: 'Altamont' },
+  { city: 'Alton' },
+  { city: 'Altonah' },
+  { city: 'American Fork' },
+  { city: 'Aneth' },
+  { city: 'Annabella' },
+  { city: 'Antimony' },
+  { city: 'Aurora' },
+  { city: 'Axtell' } ]
+[0mGET /getcity?q=A [32m200 [0m5.136 ms - 194[0m
+{ q: 'A' }
+/^A/
+Alpine
+Altamont
+Alton
+Altonah
+American Fork
+Aneth
+Annabella
+Antimony
+Aurora
+Axtell
+[ { city: 'Alpine' },
+  { city: 'Altamont' },
+  { city: 'Alton' },
+  { city: 'Altonah' },
+  { city: 'American Fork' },
+  { city: 'Aneth' },
+  { city: 'Annabella' },
+  { city: 'Antimony' },
+  { city: 'Aurora' },
+  { city: 'Axtell' } ]
+[0mGET /getcity?q=A [36m304 [0m2.095 ms - -[0m
+{ q: 'Al' }
+/^Al/
+Alpine
+Altamont
+Alton
+Altonah
+[ { city: 'Alpine' },
+  { city: 'Altamont' },
+  { city: 'Alton' },
+  { city: 'Altonah' } ]
+[0mGET /getcity?q=Al [32m200 [0m2.787 ms - 75[0m
+{ q: 'Alp' }
+/^Alp/
+Alpine
+[ { city: 'Alpine' } ]
+[0mGET /getcity?q=Alp [32m200 [0m1.397 ms - 19[0m
+{ q: 'Alpin' }
+/^Alpin/
+Alpine
+[ { city: 'Alpine' } ]
+[0mGET /getcity?q=Alpin [32m200 [0m1.131 ms - 19[0m
+{ q: 'Alpin' }
+/^Alpin/
+Alpine
+[ { city: 'Alpine' } ]
+[0mGET /getcity?q=Alpin [36m304 [0m0.975 ms - -[0m
+{ q: 'Alpine' }
+/^Alpine/
+Alpine
+[ { city: 'Alpine' } ]
+[0mGET /getcity?q=Alpine [32m200 [0m1.026 ms - 19[0m
+[0mGET /weatherpics/clear.jpg [32m200 [0m0.624 ms - 1872505[0m
+[0mGET / [36m304 [0m1.370 ms - -[0m
+[0mGET /style.css [36m304 [0m0.338 ms - -[0m
+[0mGET /javascriptstuff.js [33m404 [0m0.830 ms - 1006[0m
+[0mGET /weatherpics/thepic.jpeg [36m304 [0m0.337 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m2.555 ms - 1006[0m

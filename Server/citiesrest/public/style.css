@@ -1,0 +1,122 @@
+body{
+   background-size: 120%;
+   color:white;
+   font-family: "Times New Roman", Times, serif;
+}
+#trademark
+{
+  position:absolute;
+  bottom:20px;
+  font-size:10px;
+  left:650px;
+}
+#enter{
+margin: auto;
+    width: 20%;
+    border: 3px solid black;
+    padding: 10px;   
+    float:left;
+    font-size: 23px;
+}
+#hope
+{
+  padding:20px;
+  bottom:20px;
+  font-size:20px;
+  text-align: center;
+}
+#city
+{
+  padding:10px;
+  margin:auto;
+  font-size: 30px;
+  width:20%;
+  float:right;
+}
+h1{
+ text-align:center;
+  font:50px;
+}
+
+.container-sun{
+  position:absolute;
+  bottom:80px;
+  left:600px;
+}
+/* the svg element */
+.svg-sun{
+  width:300px;
+  height:300px;
+
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin:50% 50%;
+
+-webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+
+}
+/* the circle element in the svg itself */
+#sun{
+  stroke-width:18;
+  stroke-dasharray:2;
+  stroke-dashoffset:2;
+}
+/* animation for the sun glowing effect */
+@-webkit-keyframes sun-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-moz-keyframes sun-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-o-keyframes sun-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-ms-keyframes sun-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@keyframes sun-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+
+/* start spin animation */
+@-webkit-keyframes spin{
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin{
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin{
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spin{
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes spin{
+  100% {
+    transform: rotate(360deg);
+  }
+}

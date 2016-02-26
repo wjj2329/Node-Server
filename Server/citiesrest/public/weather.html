@@ -1,0 +1,124 @@
+
+<title>City Finder</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="javascriptstuff.js"></script>
+</head>
+<body>
+<h1>
+  What's the Weather Like in Utah Today?
+  <h1>
+<div id="enter">
+<form>
+Enter A Utah City: <input type="text" id="cityfield" value=""><br>
+Suggestion: <span id="txtHint">Empty</span>
+<input id="button" type="submit" value="Submit">
+</form>
+</div>
+<div id="city">
+<p>City</p>
+
+<textarea id="dispcity"> text</textarea>
+<p>Current Weather</p>
+<div id="weather">No weather</div>
+</div>
+<div id="hope">
+  <p>
+    Insert into the bar on the top left corner which city in the state of Utah you would like to have a weather forecast on and then on the right a detailed weather reporting the temperture weather conditions will appear.  Thank you for visiting this website today.
+  </p>
+  </div>
+  <div class="container-sun">
+<svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+<circle cx="50" cy="50" r="35" id="sun"></circle>
+</svg>
+</div>
+<div id="trademark">
+  <p>
+    Created by SunWish Developers.  William Jones 
+  </p>
+</div>
+</body>
+<script>
+$( "#cityfield" ).keyup(function() {
+ var url = "http://ec2-52-11-135-143.us-west-2.compute.amazonaws.com:3000/getcity?q="+$("#cityfield").val();
+$.getJSON(url,function(data) {
+    var everything;
+    everything = "<ul>";
+    $.each(data, function(i,item) {
+      everything += "<li> "+data[i].city;
+    });
+    everything += "</ul>";
+    $("#txtHint").html(everything);
+  })
+  .done(function() { console.log('getJSON request succeeded!'); })
+  .fail(function(jqXHR, textStatus, errorThrown) { 
+    console.log('getJSON request failed! ' + textStatus); 
+    console.log("incoming "+jqXHR.responseText);
+  })
+  .always(function() { console.log('getJSON request ended!');
+  })
+  .complete(function() { console.log("complete"); });
+});
+$("#button").click(function(e){
+  var value = $("#cityfield").val();
+  console.log(value);
+  e.preventDefault();
+  $("#dispcity").text(value);
+  //inserted here
+   var myurl= "https://api.wunderground.com/api/9715a2403ffa321a/geolookup/conditions/q/UT/";
+  myurl += value;
+  myurl += ".json";
+  console.log(myurl);
+  $.ajax({
+    url : myurl,
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var location = parsed_json['location']['city'];
+      var temp_string = parsed_json['current_observation']['temperature_string'];
+      var current_weather = parsed_json['current_observation']['weather'];
+      everything = "<ul>";
+      everything += "<li>Location: "+location;
+      everything += "<li>Temperature: "+temp_string;
+      everything += "<li>Weather: "+current_weather;
+      everything += "</ul>";
+      $("#weather").html(everything);
+      changeBGImage(current_weather);
+    }
+  });
+});
+document.body.background="weatherpics/thepic.jpeg";
+document.body.style.color="white";
+document.body.background.style.width='auto';
+document.body.background.style.height='auto';
+function changeBGImage(current_weather){
+if(current_weather=="Clear")
+{
+    document.body.background = "weatherpics/clear.jpg";
+     document.body.style.color="white";
+}
+if(current_weather=="Mostly Cloudy")
+{
+  document.body.background="weatherpics/mostly_cloudy.jpg";
+  document.body.style.color="black";
+}
+if(current_weather=="Partly Cloudy")
+{
+  document.body.background="weatherpics/partly_cloudy.jpg";
+  document.body.style.color="white";
+}
+if(current_weather=="Overcast")
+{
+  document.body.background="weatherpics/overcast.jpg";
+  document.body.style.color="white";
+}
+if(current_weather=="Snow")
+{
+  document.body.background="weatherpics/snow.png";
+  document.body.style.color="black";
+}
+}
+
+</script>
+
+</html>
+
